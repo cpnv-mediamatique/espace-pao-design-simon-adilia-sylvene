@@ -3,29 +3,36 @@ body {
     background-repeat: no-repeat;
     width: 100%;*/
     background-color:rgb(65, 36, 112);
-    }
+        
+}
 .body{    
     display: grid-area;
+    width: 100%;
+    height: 100%;
     margin: 0px;
-    grid-column-gap: 15px;
+    grid-column-gap: 0px;
     grid-template-areas:
-        "logo header header logout"
-        "planete1 planete1 planete2 planete2"
-        "planete3 planete3 soleil soleil"
-        "planete4 planete4 planete5 planete5";
+        "header header"
+        "planete1 planete2"
+        "planete3 soleil"
+        "planete4 planete5";
+}
+h1, p {
+    color: white;
+}
+#header {
+    grid-area: header;
+    background-image: url(/img/nuageViolet.png);
+    width: 100%;
 }
 #planete1 {
     grid-area: planete1;
-    background: url("../img/planete1.png");
-    width: 250px;
+} #planete1.img {
+    padding-left: 100px;
 }
 #planete2 {
     grid-area: planete2;
-    background: url("../img/planete2.png");
-    width: 300px;
 }
 #planete3 {
     grid-area: planete3;
-    background: url("../img/planete3.png");
-    width: 200px
 }
