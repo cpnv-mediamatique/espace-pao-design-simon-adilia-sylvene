@@ -1,0 +1,54 @@
+body {
+    background-image:url("../img/nuageViolet.png");
+    background-repeat: no-repeat;
+    width: 100px;
+    background-size: cover;
+    background-color:rgb(65, 36, 112);
+    
+    display: grid;
+    margin: 0px;
+    grid-column-gap: 15px;
+    grid-template-areas:
+        "logo header logout"
+        "planete1 planete2"
+        "planete3 soleil"
+        "planete4 planete5";
+}
+/*MENU
+nav {
+    grid-area: nav;
+   background-color: darkgreen;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav li {
+    display: inline-block;
+    flex-grow: 1;
+    text-align: center;
+}
+nav a {
+    display: block;
+    width: 100%;
+    color: antiquewhite;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+*/
+#planete1 {
+    grid-area: plante1;
+    background: url("../img/planete1.png");
+    background-size: cover;
+}
+#planete2 {
+    grid-area: plante2;
+    background: url("../img/planete2.png");
+    background-size: cover;
+}
+#planete3 {
+    grid-area: plante3;
+    background: url("../img/planete3.png");
+    background-size: cover;
+}
