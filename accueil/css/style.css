@@ -1,129 +1,31 @@
 body {
-    background-image:url("../img/nuageViolet.png");
+/*    background-image:url("../img/nuageViolet.png");
     background-repeat: no-repeat;
-    width: 100px;
-    background-size: cover;
+    width: 100%;*/
     background-color:rgb(65, 36, 112);
-    
-    display: grid;
+    }
+.body{    
+    display: grid-area;
     margin: 0px;
     grid-column-gap: 15px;
     grid-template-areas:
-        "logo header logout"
-        "planete1 planete2"
-        "planete3 soleil"
-        "planete4 planete5";
+        "logo header header logout"
+        "planete1 planete1 planete2 planete2"
+        "planete3 planete3 soleil soleil"
+        "planete4 planete4 planete5 planete5";
 }
-body > * {
-    color: rgb(117, 103, 85);
-    font-family: Trebuchet MS, Arial, sans-serif;
-    text-decoration: none;
+#planete1 {
+    grid-area: planete1;
+    background: url("../img/planete1.png");
+    width: 250px;
 }
-/*TEXTE*/
-h1 {
-    text-transform: uppercase;
-    font-weight: lighter;
+#planete2 {
+    grid-area: planete2;
+    background: url("../img/planete2.png");
+    width: 300px;
 }
-h2 {
-    text-transform: uppercase;
-    font-weight: lighter;
-}
-h3 {
-    text-align: center;
-    text-transform: uppercase;
- }
-p {
-    text-align: center;
-    font-style: italic;
-    text-transform: capitalize;
-}
-/*HEADER*/
-header {
-
-}
-/*MENU*/
-nav {
-    grid-area: nav;
-    background-color: darkgreen;
-}
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-nav li {
-    display: inline-block;
-    flex-grow: 1;
-    text-align: center;
-}
-nav a {
-    display: block;
-    width: 100%;
-    color: antiquewhite;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-/*CONTENU*/
-#1 {
-    grid-area: plante1;
-    background: url("../img/plantes/lavande.jpg");
-    background-size: cover;
-}
-#2 {
-    grid-area: plante2;
-    background: url("../img/plantes/deutzie.png");
-    background-size: cover;
-}
-#3 {
-    grid-area: plante3;
-    background: url("../img/plantes/cytise.png");
-    background-size: cover;
-}
-#4 {
-    grid-area: plante4;
-    background: url("../img/plantes/bambou.png");
-    background-size: cover
-}
-#5 {
-    grid-area: plante5;
-    background: url("../img/plantes/lila.png");
-    background-size: cover;
-}
-#6 {
-    grid-area: plante6;
-    background: url("../img/plantes/bignone.png");
-    background-size: cover;
-}
-#7 {
-    grid-area: plante7;
-    background: url("../img/plantes/aloe.png");
-    background-size: cover;
-}
-#8 {
-    grid-area: plante8;
-    background: url("../img/plantes/sarracene.png");
-    background-size: cover;
-}
-#h2 {
-    grid-area: h2;
-}
-#9 {
-    grid-area: plante9;
-    background: url("../img/plantes/pourpier.png");
-    background-size: cover;
-}
-#10 {
-    grid-area: plante10;
-    background: url("../img/plantes/ghost.png");
-    background-size: cover;
-}
-#11 {
-    grid-area: plante11;
-    background: url("../img/plantes/haworthia.png");
-    background-size: cover;
-}
-#12 {
-    grid-area: plante12;
-    background: url("../img/plantes/orpin.png");
-    background-size: cover;
+#planete3 {
+    grid-area: planete3;
+    background: url("../img/planete3.png");
+    width: 200px
 }
