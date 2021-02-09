@@ -1,0 +1,54 @@
+div, body {
+    background-color: #1B1543; 
+}
+
+input {
+    
+    border-radius: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0fr 0fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 0px 0px;
+  grid-template-areas:
+    "Prénom Nom . ."
+    "Adresse-mail Adresse-mail Adresse-mail Adresse-mail"
+    "Mot-de-passe Mot-de-passe Mot-de-passe Mot-de-passe"
+    "Confirmer-mot-de-passe Confirmer-mot-de-passe Confirmer-mot-de-passe Confirmer-mot-de-passe";
+}
+.Prénom { grid-area: Prénom; }
+.Nom { grid-area: Nom; }
+.Adresse-mail { grid-area: Adresse-mail; }
+.Mot-de-passe { grid-area: Mot-de-passe; }
+.Confirmer-mot-de-passe { grid-area: Confirmer-mot-de-passe; }
+
+
+img {
+    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    
+}
+
+h1 {
+    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;    
+    
+}
+
+#pass {
+    
+    width: 390px;
+}
+
+#PAO {
+    
+    margin-bottom:  100px;
+}
