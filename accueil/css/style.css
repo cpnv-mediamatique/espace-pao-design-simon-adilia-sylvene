@@ -1,24 +1,29 @@
 body {
-    width: 100px;
-    background-color:rgb(65, 36, 112);
+    background-color:rgb(65, 36, 112); /*#412470*/
+    background-image: url(/img/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 body > * {
     color: white;
-    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue';
 }
 .grid-container {
+    width: 70%;
     display: grid;
-    margin: 50px;
     grid-column-gap: 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "header header"
         "planete1 planete2"
-        "planete3 soleil";
+        "planete3 soleil"
+        "planete4 planete5"
+        "footer footer";
 }
 .header {
     grid-area: header;
-    height: 200px;
+    height: 100px;
 }
 .planete1 {
     grid-area: planete1;
@@ -28,6 +33,7 @@ body > * {
 .planete2 {
     grid-area: planete2;
     margin-left: 25px;
+    margin-top: 25px;
     margin-bottom: 50px;
 }
 .planete3 {
@@ -37,4 +43,13 @@ body > * {
 .soleil {
      grid-area: soleil;
 }
-
+.planete4 {
+    grid-area: planete4;
+    margin-top: 25px;
+    height: 100px;
+}
+.planete5 {
+    grid-area: planete5;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
