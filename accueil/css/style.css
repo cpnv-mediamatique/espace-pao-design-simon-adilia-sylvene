@@ -1,8 +1,7 @@
 body {
     background-color:rgb(65, 36, 112); /*#412470*/
-    background-image: url(/img/background.png) centered;
-    background-size: 100%;
-}
+    background-image: url(/img/background.png);
+    background-size: cover;}
 h1, h3 {
     color: white;
     font-family: Roboto, 'Open Sans', 'Helvetica Neue';
