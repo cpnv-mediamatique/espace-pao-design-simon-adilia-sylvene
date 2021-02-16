@@ -1,18 +1,17 @@
 body {
     background-color:rgb(65, 36, 112); /*#412470*/
-    background-image: url(/img/background.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(/img/background.png) centered;
+    background-size: 100%;
 }
-body > * {
+h1, h3 {
     color: white;
     font-family: Roboto, 'Open Sans', 'Helvetica Neue';
 }
 .grid-container {
-    width: 70%;
+    margin-left: 15%;
+    margin-right: 10%;
     display: grid;
-    grid-column-gap: 50px;
+    grid-column-gap: 30px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "header header"
@@ -27,14 +26,14 @@ body > * {
 }
 .planete1 {
     grid-area: planete1;
-    margin-left: 25px;
+    padding-left: 35px;
+    padding-top: 25px;
     height: 100px;
 }
 .planete2 {
     grid-area: planete2;
-    margin-left: 25px;
-    margin-top: 25px;
-    margin-bottom: 50px;
+    padding-left: 25px;
+    padding-top: 50px;
 }
 .planete3 {
     grid-area: planete3;
@@ -42,14 +41,16 @@ body > * {
 }
 .soleil {
      grid-area: soleil;
+     padding-top: 50px;
 }
 .planete4 {
     grid-area: planete4;
-    margin-top: 25px;
+    padding-top: 50px;
+    padding-left: 100px;
     height: 100px;
 }
 .planete5 {
     grid-area: planete5;
-    margin-left: 25px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-right: 100px;
 }
