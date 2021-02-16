@@ -8,14 +8,13 @@ body > * {
 }
 .grid-container {
     display: grid;
-    margin: 0px;
-    grid-column-gap: 0px;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px;
+    grid-column-gap: 50px;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "header header"
         "planete1 planete2"
-        "planete3 soleil"
-        "planete4 planete5";
+        "planete3 soleil";
 }
 .header {
     grid-area: header;
@@ -23,22 +22,19 @@ body > * {
 }
 .planete1 {
     grid-area: planete1;
-    height: 200px;
+    margin-left: 25px;
+    height: 100px;
 }
 .planete2 {
     grid-area: planete2;
-    
+    margin-left: 25px;
+    margin-bottom: 50px;
 }
 .planete3 {
     grid-area: planete3;
-    height: 200px;
+    height: 100px;
 }
 .soleil {
      grid-area: soleil;
 }
-.planete4 {
-    grid-area: planete4;
-}
-.planete5 {
-    grid-area: planete5;
-}
+
