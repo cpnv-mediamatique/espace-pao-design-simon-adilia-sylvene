@@ -4,7 +4,13 @@ background-color: #1B1543;
 }
 h1{
    color: #FFFFFF;
+   text-align: center;
 }
 img{
-    margin-top: 100px;
+    margin-top: 80px;
+}
+
+
+#mail{
+    margin-top: 50px;
 }
