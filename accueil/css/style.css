@@ -13,7 +13,7 @@ h1, h3 {
     grid-column-gap: 30px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "header header"
+        "header deco"
         "planete1 planete2"
         "planete3 soleil"
         "planete4 planete5"
@@ -22,6 +22,11 @@ h1, h3 {
 .header {
     grid-area: header;
     height: 100px;
+    width: 70%;
+}
+.deco {
+    grid-area: deco;
+    width: 30%;
 }
 .planete1 {
     grid-area: planete1;
