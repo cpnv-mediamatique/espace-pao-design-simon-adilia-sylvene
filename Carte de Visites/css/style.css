@@ -1,0 +1,25 @@
+body {
+background-color: #1B1543;
+background-image: url("img/back_planet.png");
+
+}
+h1{
+   color: #FFFFFF;
+   text-align: center;
+}
+img{
+    margin-top: 80px;
+}
+
+
+#mail{
+    margin-top: 50px;
+}
+
+
+#planet{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    }
