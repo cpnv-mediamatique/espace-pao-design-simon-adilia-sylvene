@@ -1,5 +1,6 @@
 body {
 background-color: #1B1543;
+background-image: url("img/back_planet.png");
 
 }
 h1{
@@ -14,3 +15,11 @@ img{
 #mail{
     margin-top: 50px;
 }
+
+
+#planet{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    }
